@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+@import "config";
+@import "menu";
+@import "mobile";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background();
+  background-color: $primary-color;
+  font-family: "Cabin", sans-serif;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: $secondary-color;
+  overflow: hidden;
+}
+
+a {
+  color: $third-color;
+  text-decoration: none;
+  &:hover {
+    color: $secondary-color;
+    @include easeOut();
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  &.bigHeader {
+    font-size: 6rem;
+  }
+  &.smallHeader {
+    margin-bottom: 2rem;
+  }
+}
+.fa {
+  margin-left: 10px;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.lastName {
+  color: $third-color;
+}
+main {
+  padding: 3rem;
+  height: 100%;
+
+  &#home {
+    overflow: hidden;
+
+    h1 {
+      margin-top: 25vh;
+    }
+  }
+  &.hide {
+    visibility: hidden;
+    @include easeOut;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  .img-container {
+    position: relative;
+
+    img {
+      width: 100%;
+
+      border: 3px $third-color solid;
+    }
+    &:hover {
+      border-color: $secondary-color;
+      @include easeOut;
+      .description {
+        opacity: 0.9;
+        visibility: visible;
+      }
+    }
+    .description {
+      border-color: $secondary-color;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      bottom: 3px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      p {
+        margin: 20% auto;
+        padding: 0 10%;
+      }
+      color: $secondary-color;
+      font-size: 2rem;
+      font-weight: bold;
+
+      visibility: hidden;
+
+      background-color: lighten($color: rgb(238, 171, 117), $amount: 7);
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+
+  background-color: lighten($third-color, 6);
+  color: $secondary-color;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  width: 100%;
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+
+i.fa-eye,
+i.fa-github {
+  margin-right: 10px;
+}
+
+//Skills
+
+#skillsHeader {
+  margin-left: 3.5rem;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
+  div {
+    font-size: 2rem;
+    border: 3px $third-color solid;
+    padding: 1.5rem 2.5rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background-color: $third-color;
+      // font-size: 2.5rem;
+    }
+  }
+}
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+  margin-bottom: 0;
+}
