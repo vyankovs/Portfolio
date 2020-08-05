@@ -37,10 +37,22 @@
       margin-bottom: 1rem;
       font-size: 4rem;
     }
-    .projects .img-container .description {
-      font-size: 1.5rem;
-      p {
-        margin: 10% auto;
+    .projects .img-container {
+      &:hover,
+      :active,
+      :focus {
+        border-color: $secondary-color;
+        @include easeOut;
+        .description {
+          opacity: 0.9;
+          visibility: visible;
+        }
+      }
+      .description {
+        font-size: 1.5rem;
+        p {
+          margin: 10% auto;
+        }
       }
     }
     .fa-3x {
@@ -64,12 +76,12 @@
   }
   .menu-nav {
     height: 40vh;
-    margin-top: 0;
+    padding-bottom: 30px;
     line-height: 1;
     transform: translate3d(-100%, 0, 0);
 
     .nav-item {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
   .menu-branding {

@@ -85,7 +85,9 @@ main {
 
       border: 3px $third-color solid;
     }
-    &:hover {
+    &:hover,
+    :active,
+    :focus {
       border-color: $secondary-color;
       @include easeOut;
       .description {
