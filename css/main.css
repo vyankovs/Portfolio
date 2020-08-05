@@ -105,11 +105,11 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 1171px) {
   #work .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 769px) and (max-width: 1170px) {
   main .projects .img-container .description {
     font-size: 1.7rem; }
   #work .projects {
@@ -131,6 +131,16 @@
       line-height: 1;
       margin-bottom: 1rem;
       font-size: 4rem; }
+    main .projects .img-container:hover,
+    main .projects .img-container :active,
+    main .projects .img-container :focus {
+      border-color: #400e61;
+      transition: all 0.6s ease-out; }
+      main .projects .img-container:hover .description,
+      main .projects .img-container :active .description,
+      main .projects .img-container :focus .description {
+        opacity: 0.9;
+        visibility: visible; }
     main .projects .img-container .description {
       font-size: 1.5rem; }
       main .projects .img-container .description p {
@@ -150,11 +160,11 @@
       transform: rotate3d(0, 0, 0); }
   .menu-nav {
     height: 40vh;
-    margin-top: 0;
+    padding-bottom: 30px;
     line-height: 1;
     transform: translate3d(-100%, 0, 0); }
     .menu-nav .nav-item {
-      font-size: 20px; }
+      font-size: 30px; }
   .menu-branding {
     height: 60vh;
     transform: translate3d(100%, 0, 0); }
@@ -253,10 +263,14 @@ main {
     .projects .img-container img {
       width: 100%;
       border: 3px #fa7844 solid; }
-    .projects .img-container:hover {
+    .projects .img-container:hover,
+    .projects .img-container :active,
+    .projects .img-container :focus {
       border-color: #400e61;
       transition: all 0.6s ease-out; }
-      .projects .img-container:hover .description {
+      .projects .img-container:hover .description,
+      .projects .img-container :active .description,
+      .projects .img-container :focus .description {
         opacity: 0.9;
         visibility: visible; }
     .projects .img-container .description {
