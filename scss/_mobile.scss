@@ -35,6 +35,11 @@
     .fa-3x {
       font-size: 30px;
     }
+    #skillsHeader {
+      // font-size: 2rem;
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
   ul.menu-nav,
   div.menu-branding {
@@ -86,5 +91,8 @@
     .projects {
       grid-template-columns: 1fr;
     }
+  }
+  header .menu-nav {
+    margin-top: 5px;
   }
 }
