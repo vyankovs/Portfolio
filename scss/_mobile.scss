@@ -1,8 +1,17 @@
 @include mediaXl {
-  #work {
-    .projects {
-      grid-template-columns: repeat(4, 1fr);
+  main {
+    margin-top: 40px;
+    &#work {
+      .projects {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
+  }
+  #main-footer {
+    padding: 1rem;
+
+    height: 80px;
+    margin-bottom: 40px;
   }
 }
 @include mediaLg {
