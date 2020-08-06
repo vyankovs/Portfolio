@@ -55,6 +55,7 @@ header {
 main {
   margin-top: 40px;
   padding: 3rem;
+  padding-bottom: 1rem;
   height: 100%;
 
   &#home {
@@ -171,6 +172,6 @@ i.fa-github {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   width: 100%;
 }

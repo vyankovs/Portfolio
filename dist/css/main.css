@@ -251,6 +251,7 @@ header {
 main {
   margin-top: 40px;
   padding: 3rem;
+  padding-bottom: 1rem;
   height: 100%; }
   main#home {
     overflow: hidden; }
@@ -339,5 +340,5 @@ i.fa-github {
   background: rgba(235, 218, 148, 0.938);
   color: set-text-color(rgba(243, 233, 191, 0.938));
   height: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   width: 100%; }
