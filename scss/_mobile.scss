@@ -1,6 +1,7 @@
 @include mediaXl {
   main {
     margin-top: 40px;
+    padding-bottom: 5rem;
     &#work {
       .projects {
         grid-template-columns: repeat(4, 1fr);
