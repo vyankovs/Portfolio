@@ -160,7 +160,7 @@
       transform: rotate3d(0, 0, 0); }
   .menu-nav {
     height: 40vh;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     line-height: 1;
     transform: translate3d(-100%, 0, 0); }
     .menu-nav .nav-item {
@@ -184,7 +184,11 @@
     main #home {
       margin-top: 10vh; }
   #work .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #main-footer {
+    height: 50px;
+    margin-bottom: 10px;
+    width: 100%; } }
 
 * {
   box-sizing: border-box; }
@@ -332,4 +336,5 @@ i.fa-github {
   background: rgba(235, 218, 148, 0.938);
   color: set-text-color(rgba(243, 233, 191, 0.938));
   height: 60px;
-  margin-bottom: 0; }
+  margin-bottom: 30px;
+  width: 100%; }
