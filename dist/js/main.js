@@ -4,10 +4,12 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 const main = document.querySelector("main");
+const menuFa = document.querySelector("#menuFa");
 
 let showMenu = false;
 
 menuBurger.addEventListener("click", toggleMenu);
+menuFa.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {
