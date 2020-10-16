@@ -352,3 +352,6 @@ i.fa-github {
   height: 60px;
   margin-bottom: 100px;
   width: 100%; }
+
+#menuFa {
+  cursor: pointer; }
